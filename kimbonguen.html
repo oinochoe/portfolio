@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kim Bong Guen</title>
+	<meta name="description" content="Yeongmin is the one of the best front-end engineers in the world." />
+	<meta name="keywords" content="HTML5, CSS3, JQUERY, JAVASCRIPT, REARCT.JS, SCSS, GULP, WEBPACK" />
+	<meta name="author" content="Yeongmin" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<style>
+		.grid__item-text a{display:block; color:#fff;}
+		.list_type1 li{line-height:2}
+	</style>
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports &&
+				window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="loading">
+	<main>
+		<div class="grid">
+			<div class="grid__item theme-1">
+				<div class="grid__item-content">
+					<h2 class="grid__item-title grid__item-title--small" style="text-align: center;">김봉근</h2>
+					<img src="img/bong.jpg" alt="" style="width:150px; margin:100px auto">
+				</div>
+			</div>
+			<div class="grid__item theme-4">
+				<div class="grid__item-content">
+					<h2 class="grid__item-title grid__item-title--small" style="word-break: keep-all">생산기술 2년 6개월, 연구소 2년 10개월 경력의 엔지니어</h2>
+					<p class="grid__item-text">
+							<span>1986년 (34세)</span> |
+							<span>재직중</span>
+							<a href="mailto:myroom100@naver.com">email : myroom100@naver.com</a>
+							<a href="tel:+82-10-9422-3326">tel : 010-9422-3326</a>
+							<span>(51423) 경남 창원시 성산구 창원천로 292 반송대동아파트 102동 804호</span>
+						</table>
+					</p>
+				</div>
+			</div>
+			<div class="grid__item theme-5">
+				<div class="grid__item-content">
+					<h2 class="grid__item-title grid__item-title--small">핵심역량</h2>
+					<p class="grid__item-text">
+						<ul class="list_type1">
+							<li>활용능력:  Office 상급, 한글 중급, 전산관리능력 중상급</li>
+							<li>설계능력: 2D, 3D 모델링, Ass'y (주:Solid Edge, CAD)</li>
+							<li>영어: 1년 해외연수, GM해외플랜트와 업무경험</li>
+							<li>학력사항 : 경남대학교(4년) 졸업</li>
+							<li>경력사항 : 경력 5년 3개월</li>
+							<li>희망연봉 : 3,400~3,600만원/정규직 <br> (직전 연봉 : 3,400 만원)</li>
+							<li>희망 근무지 : 부산, 창원</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="grid__item theme-1">
+				<div class="grid__item-content">
+					<h2 class="grid__item-title grid__item-title--small">자기소개</h2>
+					<p class="grid__item-text" >
+							1. 본인이 가진 열정과 역량에 대하여 <br> 
+							[문제 해결에 대한 열정! 배움에 대한 열망!]<br>
+							공학사로 졸업하여 생산기술 직무로 첫 사회경험을 시작하였습니다. <br>
+							주 업무는 생산기술개발, 품질개선, 원가절감 등이었습니다. <br>
+							이 중 가장 큰 비중을 차지하는 품질개선업무에 있어 전공에서 배우지 못했거나 무관했던 다양한 화학약품과 생산프로세스에 관한 지식이 필요하였지만, 학교에서 배우지 못해 당장 현업에 어려움을 겪었습니다. <br>
+							또한, 다양한 품질문제분석을 하기 위해 품질관리도구 및 기법을 활용하는 능력도 필요했지만, 이 또한 지식이 전혀 없었습니다. <br>
+							이러한 문제로 업무가 지체되거나 원활치 못하게 진행되지 않도록 업무 중 틈틈이, 늦은 퇴근 후에도 필요한 공부를 스스로 찾아하며 업무능력을 향상시켰습니다......... <br><br>
+
+					<a href="detail.html" class="grid__item-link" target="_blank">더 자세히 보기..</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<script src="js/hover.js"></script>
+	<script>
+		imagesLoaded(document.querySelectorAll('img'), () => {
+			document.body.classList.remove('loading');
+		});
+
+		Array.from(document.querySelectorAll('.grid__item-img')).forEach((el) => {
+			const imgs = Array.from(el.querySelectorAll('img'));
+			new hoverEffect({
+				parent: el,
+				intensity: el.dataset.intensity || undefined,
+				speedIn: el.dataset.speedin || undefined,
+				speedOut: el.dataset.speedout || undefined,
+				easing: el.dataset.easing || undefined,
+				hover: el.dataset.hover || undefined,
+				image1: imgs[0].getAttribute('src'),
+				image2: imgs[1].getAttribute('src'),
+				displacementImage: el.dataset.displacement
+			});
+		});
+	</script>
+</body>
+
+</html>
