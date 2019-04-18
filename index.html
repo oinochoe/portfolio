@@ -10,6 +10,22 @@
 	<meta name="author" content="Yeongmin" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script type='text/javascript'>
+		  //<![CDATA[
+		  // 사용할 앱의 JavaScript 키를 설정해 주세요.
+		  Kakao.init('7c272f2b490b6c9ad5035cf8832c5ce7');
+		  // 카카오 로그인 버튼을 생성합니다.
+		  Kakao.Auth.createLoginButton({
+		    container: '#kakao-login-btn',
+		    success: function(authObj) {
+		    alert(JSON.stringify(authObj));
+		  },
+		  fail: function(err) {
+		     alert(JSON.stringify(err));
+                 }
+	    });
+	  //]]>
+	</script>
 	<script>
 		document.documentElement.className = "js";
 		var supportsCssVars = function () {
