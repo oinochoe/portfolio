@@ -1,189 +1,306 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yeongmin Kim</title>
+    <meta
+      name="description"
+      content="Yeongmin is the one of the best front-end engineers in the world."
+    />
+    <meta
+      name="keywords"
+      content="HTML5, CSS3, JQUERY, JAVASCRIPT, REARCT.JS, SCSS, GULP, WEBPACK"
+    />
+    <meta name="author" content="Yeongmin" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function() {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Yeongmin Kim</title>
-	<meta name="description" content="Yeongmin is the one of the best front-end engineers in the world." />
-	<meta name="keywords" content="HTML5, CSS3, JQUERY, JAVASCRIPT, REARCT.JS, SCSS, GULP, WEBPACK" />
-	<meta name="author" content="Yeongmin" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
-	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-	<script>
-		document.documentElement.className = "js";
-		var supportsCssVars = function () {
-			var e, t = document.createElement("style");
-			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports &&
-				window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
-		};
-		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-	</script>
-</head>
+  <body class="loading">
+    <main>
+      <div class="grid">
+        <div class="grid__item theme-0">
+          <div class="grid__item-content">
+            <nav class="grid__item-nav">
+              <a
+                href="https://frontdev.tistory.com/"
+                class="grid__item-link"
+                target="_blank"
+                >&larr; 티스토리</a
+              >
+              <a
+                href="https://github.com/oinochoe/"
+                class="grid__item-link"
+                target="_blank"
+                >Github 저장소</a
+              >
+              <a href="./diary.html" class="grid__item-link" target="_blank"
+                >보유 기술</a
+              >
+            </nav>
+            <h2 class="grid__item-title grid__item-title--small">김영민</h2>
+            <img
+              src="img/yeongmin.jpg"
+              alt=""
+              style="max-width:300px; margin-top:30px;"
+            />
+          </div>
+        </div>
 
-<body class="loading">
-	<main>
-		<div class="grid">
-			<div class="grid__item theme-1">
-				<div class="grid__item-content">
-					<nav class="grid__item-nav">
-						<a href="https://frontdev.tistory.com/" class="grid__item-link" target="_blank">&larr; 티스토리</a>
-						<a href="https://github.com/oinochoe/" class="grid__item-link" target="_blank">Github 저장소</a>
-					</nav>
-					<h2 class="grid__item-title grid__item-title--small">김영민</h2>
-					<img src="img/yeongmin.jpg" alt="" style="max-width:300px; margin-top:30px;">
-				</div>
-			</div>
-			<div class="grid__item grid__item--bg theme-2">
-				<div class="grid__item-img" data-displacement="img/displacement/8.jpg" data-intensity="-0.65" data-speedIn="1.2" data-speedOut="1.2">
-					<img src="img/onmyoji.jpg" alt="Image" />
-					<img src="img/onmyoji_iu.jpg" alt="Image" />
-				</div>
-				<div class="grid__item-content">
-					<!-- <span class="grid__item-meta">ONMYOJI</span>
-					<h3 class="grid__item-subtitle">
-						<span>음양사</span>
-						<a class="grid__item-link" href="https://www.kakaogames.com/" target="_blank">카카오게임즈</a>
-					</h3> -->
-				</div>
-			</div>
-			<div class="grid__item grid__item--bg theme-3">
-				<div class="grid__item-img" data-displacement="img/displacement/4.png" data-intensity="0.2" data-speedIn="1.6"
-				 data-speedOut="1.6">
-				 	<img src="img/kbee2.jpg" alt="Image" />
-					<img src="img/kbee.jpg" alt="Image" />
-				</div>
-				<div class="grid__item-content">
-					<!-- <span class="grid__item-meta">Kbee2017</span> -->
-					<h3 class="grid__item-subtitle">
-						<!-- <span>Kbee2017 Festival</span> -->
-						<!-- <a class="grid__item-link" href="https://kbee.kr/fairDash.do" target="_blank">Check them out</a> -->
-					</h3>
-				</div>
-			</div>
-			<div class="grid__item theme-4">
-				<div class="grid__item-content">
-					<!-- <nav class="grid__item-nav">
+        <div class="grid__item grid__item--bg theme-1">
+          <div
+            class="grid__item-img"
+            data-displacement="img/displacement/13.jpg"
+            data-intensity="-1.65"
+            data-speedIn="1.3"
+            data-speedOut="1.5"
+          >
+            <img src="img/blackdesert.jpg" alt="Image" />
+            <img src="img/blackdesert2.jpg" alt="Image" />
+          </div>
+        </div>
+        <div class="grid__item grid__item--bg theme-2">
+          <div
+            class="grid__item-img"
+            data-displacement="img/displacement/8.jpg"
+            data-intensity="-0.65"
+            data-speedIn="1.2"
+            data-speedOut="1.2"
+          >
+            <img src="img/onmyoji.jpg" alt="Image" />
+            <img src="img/onmyoji_iu.jpg" alt="Image" />
+          </div>
+        </div>
+        <div class="grid__item grid__item--bg theme-3">
+          <div
+            class="grid__item-img"
+            data-displacement="img/displacement/4.png"
+            data-intensity="0.2"
+            data-speedIn="1.6"
+            data-speedOut="1.6"
+          >
+            <img src="img/kbee2.jpg" alt="Image" />
+            <img src="img/kbee.jpg" alt="Image" />
+          </div>
+          <div class="grid__item-content">
+            <!-- <span class="grid__item-meta">Kbee2017</span> -->
+            <h3 class="grid__item-subtitle">
+              <!-- <span>Kbee2017 Festival</span> -->
+              <!-- <a class="grid__item-link" href="https://kbee.kr/fairDash.do" target="_blank">Check them out</a> -->
+            </h3>
+          </div>
+        </div>
+        <div class="grid__item theme-4">
+          <div class="grid__item-content">
+            <!-- <nav class="grid__item-nav">
 						<a href="#" class="grid__item-link">About</a>
 						<a href="#" class="grid__item-link">Blog</a>
 						<a href="#" class="grid__item-link">Membership</a>
 					</nav> -->
-					<h2 class="grid__item-title grid__item-title--small">Will-change..</h2>
-					<p class="grid__item-text">CSS를 쓰다보면 특히, Anmation을 써서 여러 효과들을 낼 때 필수적으로 고려해야 될 것이 GPU 성능과 가속화이다. 그런 Property를 사용할 때 생기는 성능 병목현상을 최소화 하기 위해서 특정 브라우저(현재 Webkit 계열)에만 현재 지원하고 있지만 해결방법으로 `Will - Change` 속성이 있다.
-						<br><br>
-						하드웨어 가속은 그래픽 처리 장치(GPU)를 이용하여 중앙 처리 장치(CPU)의 처리량을 줄이고, 브라우저의 렌더링을 효율화하는 것을 말한다.
-CSS 작업 중에 이러한 하드웨어가속을 통해서 렌더링을 좀 더 빠르게 할 수 있다. 
-
-
-					</p>
-					<a href="https://frontdev.tistory.com/44" class="grid__item-link" target="_blank">Read more</a>
-				</div>
-			</div>
-			<div class="grid__item theme-5">
-				<div class="grid__item-content">
-					<h2 class="grid__item-title grid__item-title--small">잘 알려지지 않은 CSS 팁</h2>
-					<p class="grid__item-text">1. 수직 padding은 height 속성이 아닌 요소의 width 속성과 관련이 있습니다. <br>
-						2. 마진 병합 <br>
-						3. opacity 속성으로 z-index 스택 순서를 변경할 수 있습니다. <br>
-						4. css 커스텀 속성과 변수<br>5. Height: 100% 는 당신이 원하는대로 작동하지 않습니다.
-
-
-					</p>
-					<a href="https://frontdev.tistory.com/43" class="grid__item-link" target="_blank">Read more</a>
-				</div>
-			</div>
-			<div class="grid__item grid__item--bg theme-6">
-				<div class="grid__item-img" data-displacement="img/displacement/1.jpg" data-intensity="-0.4" data-speedIn="0.7"
-				 data-speedOut="0.3" data-easing="Sine.easeOut">
-				 	<img src="img/kdata2.jpg" alt="" />
-					<img src="img/kdata.jpg" alt="" />
-				</div>
-				<div class="grid__item-content">
-					<!-- <span class="grid__item-meta">한국데이터진흥원</span>
+            <h2 class="grid__item-title grid__item-title--small">
+              Will-change..
+            </h2>
+            <p class="grid__item-text">
+              CSS를 쓰다보면 특히, Anmation을 써서 여러 효과들을 낼 때
+              필수적으로 고려해야 될 것이 GPU 성능과 가속화이다. 그런 Property를
+              사용할 때 생기는 성능 병목현상을 최소화 하기 위해서 특정
+              브라우저(현재 Webkit 계열)에만 현재 지원하고 있지만 해결방법으로
+              `Will - Change` 속성이 있다. <br /><br />
+              하드웨어 가속은 그래픽 처리 장치(GPU)를 이용하여 중앙 처리
+              장치(CPU)의 처리량을 줄이고, 브라우저의 렌더링을 효율화하는 것을
+              말한다. CSS 작업 중에 이러한 하드웨어가속을 통해서 렌더링을 좀 더
+              빠르게 할 수 있다.
+            </p>
+            <a
+              href="https://frontdev.tistory.com/44"
+              class="grid__item-link"
+              target="_blank"
+              >Read more</a
+            >
+          </div>
+        </div>
+        <div class="grid__item theme-5">
+          <div class="grid__item-content">
+            <h2 class="grid__item-title grid__item-title--small">
+              잘 알려지지 않은 CSS 팁
+            </h2>
+            <p class="grid__item-text">
+              1. 수직 padding은 height 속성이 아닌 요소의 width 속성과 관련이
+              있습니다. <br />
+              2. 마진 병합 <br />
+              3. opacity 속성으로 z-index 스택 순서를 변경할 수 있습니다. <br />
+              4. css 커스텀 속성과 변수<br />5. Height: 100% 는 당신이
+              원하는대로 작동하지 않습니다.
+            </p>
+            <a
+              href="https://frontdev.tistory.com/43"
+              class="grid__item-link"
+              target="_blank"
+              >Read more</a
+            >
+          </div>
+        </div>
+        <div class="grid__item grid__item--bg theme-6">
+          <div
+            class="grid__item-img"
+            data-displacement="img/displacement/1.jpg"
+            data-intensity="-0.4"
+            data-speedIn="0.7"
+            data-speedOut="0.3"
+            data-easing="Sine.easeOut"
+          >
+            <img src="img/kdata2.jpg" alt="" />
+            <img src="img/kdata.jpg" alt="" />
+          </div>
+          <div class="grid__item-content">
+            <!-- <span class="grid__item-meta">한국데이터진흥원</span>
 					<h3 class="grid__item-subtitle">
 						<span>Visualstory</span>
 						<a class="grid__item-link" href="http://kdata.visualstory.kr/ko/" target="_blank">Discover more</a>
 					</h3> -->
-				</div>
-			</div>
-			<div class="grid__item grid__item--bg theme-7">
-				<div class="grid__item-img" data-displacement="img/displacement/7.jpg" data-intensity="0.9" data-speedIn="0.8"
-				 data-speedOut="0.4" data-easing="Circ.easeOut">
-					<img src="img/kdr.jpg" alt="" />
-					<img src="img/kt.jpg" alt="" />
-					<P class="dimmed" style="position:absolute; left:0; top:0; background:rgba(0,0,0,.3); width:100%; height:100%;"></P>
-				</div>
-				<div class="grid__item-content">
-					<!-- <span class="grid__item-meta">
+          </div>
+        </div>
+        <div class="grid__item grid__item--bg theme-7">
+          <div
+            class="grid__item-img"
+            data-displacement="img/displacement/7.jpg"
+            data-intensity="0.9"
+            data-speedIn="0.8"
+            data-speedOut="0.4"
+            data-easing="Circ.easeOut"
+          >
+            <img src="img/kdr.jpg" alt="" />
+            <img src="img/kt.jpg" alt="" />
+            <P
+              class="dimmed"
+              style="position:absolute; left:0; top:0; background:rgba(0,0,0,.3); width:100%; height:100%;"
+            ></P>
+          </div>
+          <div class="grid__item-content">
+            <!-- <span class="grid__item-meta">
 						<a class="grid__item-link" href="http://kdrsvc.co.kr/main/main.php" target="_blank">KDR(한국기업서비스)</a></span>
 					<h2 class="grid__item-title"></h2> -->
-					<!-- <h3 class="grid__item-subtitle">
+            <!-- <h3 class="grid__item-subtitle">
 						<span>KT GIGA SECURE</span>
 						<a class="grid__item-link" href="http://ktgiga.visualstory.kr/" target="_blank">KT GIGA SECURE</a>
 					</h3> -->
-				</div>
-			</div>
-			<div class="grid__item theme-8">
-				<div class="grid__item-content">
-					<h2 class="grid__item-title grid__item-title--small" style="word-break:keep-all">CSS Grid의 인터넷 익스플로러(IE) 지원</h2>
-					<p class="grid__item-text" style="word-break: keep-all">우리가 여전히 안고 있는 문제는 IE를 지원하는 것이다.  <br>
+          </div>
+        </div>
+        <div class="grid__item theme-8">
+          <div class="grid__item-content">
+            <h2
+              class="grid__item-title grid__item-title--small"
+              style="word-break:keep-all"
+            >
+              CSS Grid의 인터넷 익스플로러(IE) 지원
+            </h2>
+            <p class="grid__item-text" style="word-break: keep-all">
+              우리가 여전히 안고 있는 문제는 IE를 지원하는 것이다. <br />
 
-						모르는 것은 CSS 그리드가 IE 10에서 처음 지원되었다는 것입니다. <br>
-						
-						이 포스트에서는 IE CSS 그리드의 prefix를 이용하지 않고 CSS 그리드 구문을 사용하는 동안 IE 10 이상에서 CSS 그리드를 지원하는 방법에 대해 설명합니다.</p>
-					<a href="https://frontdev.tistory.com/42" class="grid__item-link" target="_blank">Read more</a>
-				</div>
-			</div>
-			<div class="grid__item theme-9">
-				<div class="grid__item-content">
-					<h2 class="grid__item-title grid__item-title--small">CSSOM + 렌더링</h2>
-					<p class="grid__item-text">CSS Object Model은 자바 스크립트에서 CSS를 조작 할 수있게 해주는 API 세트입니다. <br>
-						CSS의 경우 DOM과 HTML API의 펜던트이며, 이를 통해 CSS양식을 동적으로 읽고 수정할 수 있습니다. <br>
-						웹 브라우저가 렌더링 하기 위해서는 이 구조를 거치게 됩니다.<br>
-						DOM과 마찬가지로 트리형태의 구조로 이루어져 있습니다.</p>
-					<a href="https://frontdev.tistory.com/11" class="grid__item-link" target="_blank">Read more</a>
-				</div>
-			</div>
-			<div class="grid__item grid__item--bg theme-10">
-				<div class="grid__item-img" data-displacement="img/displacement/10.jpg" data-intensity="0.7" data-speedIn="1"
-				 data-speedOut="0.5" data-easing="Power2.easeOut">
-					<img src="img/npnp.jpg" alt="니뽕내뽕" />
-					<img src="img/reach.jpg" alt="리치" />
-				</div>
-				<!-- <div class="grid__item-content">
+              모르는 것은 CSS 그리드가 IE 10에서 처음 지원되었다는 것입니다.
+              <br />
+
+              이 포스트에서는 IE CSS 그리드의 prefix를 이용하지 않고 CSS 그리드
+              구문을 사용하는 동안 IE 10 이상에서 CSS 그리드를 지원하는 방법에
+              대해 설명합니다.
+            </p>
+            <a
+              href="https://frontdev.tistory.com/42"
+              class="grid__item-link"
+              target="_blank"
+              >Read more</a
+            >
+          </div>
+        </div>
+        <div class="grid__item theme-9">
+          <div class="grid__item-content">
+            <h2 class="grid__item-title grid__item-title--small">
+              CSSOM + 렌더링
+            </h2>
+            <p class="grid__item-text">
+              CSS Object Model은 자바 스크립트에서 CSS를 조작 할 수있게 해주는
+              API 세트입니다. <br />
+              CSS의 경우 DOM과 HTML API의 펜던트이며, 이를 통해 CSS양식을
+              동적으로 읽고 수정할 수 있습니다. <br />
+              웹 브라우저가 렌더링 하기 위해서는 이 구조를 거치게 됩니다.<br />
+              DOM과 마찬가지로 트리형태의 구조로 이루어져 있습니다.
+            </p>
+            <a
+              href="https://frontdev.tistory.com/11"
+              class="grid__item-link"
+              target="_blank"
+              >Read more</a
+            >
+          </div>
+        </div>
+        <div class="grid__item grid__item--bg theme-10">
+          <div
+            class="grid__item-img"
+            data-displacement="img/displacement/10.jpg"
+            data-intensity="0.7"
+            data-speedIn="1"
+            data-speedOut="0.5"
+            data-easing="Power2.easeOut"
+          >
+            <img src="img/npnp.jpg" alt="니뽕내뽕" />
+            <img src="img/reach.jpg" alt="리치" />
+          </div>
+          <!-- <div class="grid__item-content">
 					<h3 class="grid__item-subtitle">
 						<span><a class="grid__item-link" href="http://npnp.visualstory.kr/" target="_blank">니뽕내뽕</a></span>
 						<span><a class="grid__item-link" href="http://www.reachoral.com/ko/index.jsp" target="_blank">LG 생활건강 Reach</a></span>
 					</h3>
 				</div> -->
-			</div>
-		</div>
-	</main>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/three.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-	<script src="js/hover.js"></script>
-	<script>
-		imagesLoaded(document.querySelectorAll('img'), () => {
-			document.body.classList.remove('loading');
-		});
+        </div>
+      </div>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="js/hover.js"></script>
+    <script>
+      imagesLoaded(document.querySelectorAll("img"), () => {
+        document.body.classList.remove("loading");
+      });
 
-		Array.from(document.querySelectorAll('.grid__item-img')).forEach((el) => {
-			const imgs = Array.from(el.querySelectorAll('img'));
-			new hoverEffect({
-				parent: el,
-				intensity: el.dataset.intensity || undefined,
-				speedIn: el.dataset.speedin || undefined,
-				speedOut: el.dataset.speedout || undefined,
-				easing: el.dataset.easing || undefined,
-				hover: el.dataset.hover || undefined,
-				image1: imgs[0].getAttribute('src'),
-				image2: imgs[1].getAttribute('src'),
-				displacementImage: el.dataset.displacement
-			});
-		});
-	</script>
-</body>
-
+      Array.from(document.querySelectorAll(".grid__item-img")).forEach(el => {
+        const imgs = Array.from(el.querySelectorAll("img"));
+        new hoverEffect({
+          parent: el,
+          intensity: el.dataset.intensity || undefined,
+          speedIn: el.dataset.speedin || undefined,
+          speedOut: el.dataset.speedout || undefined,
+          easing: el.dataset.easing || undefined,
+          hover: el.dataset.hover || undefined,
+          image1: imgs[0].getAttribute("src"),
+          image2: imgs[1].getAttribute("src"),
+          displacementImage: el.dataset.displacement
+        });
+      });
+    </script>
+  </body>
 </html>
